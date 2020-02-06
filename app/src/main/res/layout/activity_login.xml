@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_1"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_wc_login"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="60dp"
+        android:baseline="@dimen/connexion_size"
+        android:background="@drawable/ic_wc_black_24dp"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tv_connexion_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGradientStart"
+        app:layout_constraintLeft_toLeftOf="@id/iv_wc_login"
+        app:layout_constraintTop_toBottomOf="@id/iv_wc_login"
+        app:layout_constraintRight_toLeftOf="@id/tv_connexion2_login"
+        android:text="@string/connexion"
+        android:textSize="@dimen/connexion_size"
+        />
+    <TextView
+        android:id="@+id/tv_connexion2_login"
+        app:layout_constraintRight_toRightOf="@id/iv_wc_login"
+        app:layout_constraintLeft_toRightOf="@id/tv_connexion_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintTop_toBottomOf="@id/iv_wc_login"
+        android:text="@string/connexion2"
+        android:textSize="@dimen/connexion_size"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_info_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/FindAndMeetPeople"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintTop_toBottomOf="@id/tv_connexion_login"
+        app:layout_constraintLeft_toLeftOf="@id/iv_wc_login"
+        app:layout_constraintRight_toRightOf="@id/iv_wc_login"
+        />
+
+    <TextView
+        android:id="@+id/tv_next_info_login"
+        android:text="@string/youToFindLove"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintTop_toBottomOf="@id/tv_info_login"
+        app:layout_constraintLeft_toLeftOf="@id/tv_info_login"
+        app:layout_constraintRight_toRightOf="@id/tv_info_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_create_your_login"
+        app:layout_constraintTop_toBottomOf="@id/iv_wc_login"
+        app:layout_constraintBottom_toTopOf="@id/et_password"
+        app:layout_constraintLeft_toLeftOf="@id/et_password"
+        app:layout_constraintRight_toRightOf="@id/et_password"
+        android:text="@string/Create_your_login"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/connexion_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        app:layout_constraintTop_toBottomOf="@id/iv_wc_login"
+        android:textColorHint="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/tv_next_info_login"
+        app:layout_constraintRight_toRightOf="@id/tv_next_info_login"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/margin_Size"
+        android:layout_marginStart="@dimen/margin_Size"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGradientStart"
+        android:hint="@string/Password"
+        />
+
+    <EditText
+        android:id="@+id/et_name"
+        app:layout_constraintBottom_toTopOf="@id/et_password"
+        app:layout_constraintRight_toRightOf="@id/et_password"
+        app:layout_constraintLeft_toLeftOf="@id/et_password"
+        android:layout_marginBottom="@dimen/connexion_size"
+        android:layout_width="match_parent"
+        android:hint="@string/Name"
+        android:textColorHint="@color/colorWhite"
+        android:layout_marginEnd="@dimen/connexion_size"
+        android:layout_marginStart="@dimen/connexion_size"
+        android:textColor="@color/colorGradientStart"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/et_Re_password"
+        app:layout_constraintTop_toBottomOf="@id/et_password"
+        app:layout_constraintLeft_toLeftOf="@id/et_password"
+        app:layout_constraintRight_toRightOf="@id/et_password"
+        android:hint="@string/ReEnterPassword"
+        android:textColorHint="@color/colorWhite"
+        android:layout_marginTop="@dimen/margin_Size"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/connexion_size"
+        android:layout_marginStart="@dimen/connexion_size"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGradientStart"
+        />
+    <CheckBox
+        android:id="@+id/cb_agree"
+        app:layout_constraintTop_toTopOf="@id/tv_agree_conditions"
+        app:layout_constraintBottom_toBottomOf="@id/tv_agree_conditions"
+        app:layout_constraintRight_toLeftOf="@id/tv_agree_conditions"
+        android:layout_width="wrap_content"
+        android:shadowColor="@color/colorGradientStart"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tv_agree_conditions"
+        android:text="@string/alreadyRegistered"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintTop_toBottomOf="@id/et_Re_password"
+        app:layout_constraintRight_toRightOf="@id/et_Re_password"
+        android:layout_marginTop="@dimen/connexion_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<Button
+    android:id="@+id/btn_save"
+    android:paddingEnd="70dp"
+    android:paddingStart="70dp"
+    android:layout_marginTop="@dimen/margin_Size"
+    app:layout_constraintTop_toBottomOf="@id/tv_agree_conditions"
+    app:layout_constraintLeft_toLeftOf="@id/tv_agree_conditions"
+    app:layout_constraintRight_toRightOf="@id/tv_agree_conditions"
+    android:text="@string/SAVE"
+    android:textColor="@color/colorGradientStart"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape"/>
+
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cancel"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_save"
+        app:layout_constraintEnd_toStartOf="@+id/btn_save"
+        app:layout_constraintRight_toLeftOf="@id/btn_save"
+        app:layout_constraintStart_toStartOf="@+id/et_Re_password"
+        app:layout_constraintTop_toTopOf="@id/btn_save" />
+
+    <TextView
+        android:id="@+id/tv_terms_and_conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@id/btn_save"
+        app:layout_constraintLeft_toLeftOf="@id/tv_cancel"
+        app:layout_constraintTop_toBottomOf="@id/btn_save"
+        android:layout_marginTop="@dimen/margin_Size"
+        android:textColor="@color/colorWhite"
+        android:text="@string/AgreeTermsConditions"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

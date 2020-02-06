@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="connexion_size">32sp</dimen>
+    <dimen name="margin_Size">32dp</dimen>
+    <dimen name="margin_Size46">46dp</dimen>
+    <dimen name="margin_Size24dp">24dp</dimen>
+
+
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ConstraintLayoutApp</string>
+    <string name="connexion">CONN</string>
+    <string name="connexion2">EXION</string>
+    <string name="FindAndMeetPeople">Find and Meet people around </string>
+    <string name="youToFindLove">you to find Love </string>
+    <string name="alreadyRegistered">ALREADY REGISTERED SIGN IN </string>
+    <string name="Sign_in_FB">Sign in whit Facebook </string>
+    <string name="Sign_in_Twit">Sign in whit Twitter</string>
+    <string name="Sign_in">Sign Up </string>
+    <string name="Create_your_login">CREATE YOUR LOGIN </string>
+    <string name="Password">Password </string>
+    <string name="Name">Name </string>
+    <string name="ReEnterPassword">Re-Enter-Password</string>
+    <string name="SAVE">SAVE</string>
+    <string name="Cancel">Cancel</string>
+    <string name="AgreeTermsConditions">Agree to Terms and Conditions</string>
+    <string name="GETSTARTED">GET STARTED</string>
+    <string name="FORGOTPASSWORD">FORGOT PASSWORD</string>
+    <string name="SIGNIN">SIGN IN</string>
+    <string name="EnterEmail">Enter Email</string>
+    <string name="RememberPassword">Remember Password</string>
+</resources>
